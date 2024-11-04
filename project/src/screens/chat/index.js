@@ -36,18 +36,20 @@ const Chat = ({ route }) => {
   };
 
   return (
-    <View style={styles.container}>
-      <FlatList
-        data={messages}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
-          <View style={[styles.message, item.userId === user.uid ? styles.sent : styles.received]}>
-            <Text style={styles.displayName}>{item.displayName}</Text>
-            <Text style={styles.messageText}>{item.message}</Text>
-            <Text style={styles.timestamp}>{new Date(item.timestamp?.toDate()).toLocaleTimeString()}</Text>
-          </View>
-        )}
-      />
+    <>
+      <View style={styles.container}>
+        <FlatList
+          data={messages}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+            <View style={[styles.message, item.userId === user.uid ? styles.sent : styles.received]}>
+              <Text style={styles.displayName}>{item.displayName}</Text>
+              <Text style={styles.messageText}>{item.message}</Text>
+              <Text style={styles.timestamp}>{new Date(item.timestamp?.toDate()).toLocaleTimeString()}</Text>
+            </View>
+          )}
+        />
+      </View>
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
@@ -57,7 +59,8 @@ const Chat = ({ route }) => {
         />
         <Button title="Enviar" onPress={sendMessage} />
       </View>
-    </View>
+    </>
+    
   );
 };
 
@@ -65,7 +68,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    backgroundColor: "#fff",
+    backgroundColor: "#f2f2f2",
   },
   message: {
     padding: 10,
@@ -96,7 +99,8 @@ const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: "row",
     alignItems: "center",
-    paddingTop: 10,
+    padding: 15,
+    backgroundColor: "#fff",
   },
   input: {
     flex: 1,

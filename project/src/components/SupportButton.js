@@ -108,8 +108,10 @@ const SupportButton = ({ user, wallet, setWallet, event, setEvent, progress }) =
               onChangeText={setSupportAmount}
               style={styles.textInput}
             />
-            <Button title="Enviar" onPress={handleSubmit} />
-            <Button title="Cancelar" onPress={() => setModalVisible(false)} color="red" />
+            <View style={{ flexDirection: "row", gap: "8px" }}>
+              <Button title="Enviar" onPress={handleSubmit} />
+              <Button title="Cancelar" onPress={() => setModalVisible(false)} color="red" />
+            </View>
           </View>
         </View>
       </Modal>
