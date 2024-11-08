@@ -18,21 +18,13 @@ Bem-vindo ao repositório do projeto "Eventos APP"! Neste projeto, foi desenvolv
 2. **Chat em Grupo em Tempo Real**:<br>
   - Interface de chat intuitiva com suporte a múltiplos usuários simultâneos.<br>
   - Exibição de mensagens com o nome do usuário, utilizando dados da autenticação Google.<br>
-   
-3. **Design Responsivo e Estilizado**:<br>
-  - Styled-Components para criar uma interface moderna e responsiva.<br>
-  - Uso de React-Icons para adicionar ícones ao chat, melhorando a experiência do usuário.<br>
 
-4. **Experiência de Usuário Otimizada**:<br>
-  - Envio de mensagens com teclado ou botão de envio.<br>
-  - Exibição de histórico de chat, mantendo o estado entre as sessões do usuário.<br>
-
-5. **Diálogos Personalizados**:<br>
+3. **Diálogos Personalizados**:<br>
   - Utilização do SweetAlert2 (Swal) para criar mensagens e alertas personalizados.<br>
 
-6. **Listagem e Criação de Eventos**:<br>
+4. **Listagem e Criação de Eventos**:<br>
 - Listagem de Eventos criados por Usuários logados.<br>
 - Criação de Eventos por Usuários logados.<br>
 
-7. **Apoio de Eventos**:<br>
+5. **Apoio de Eventos**:<br>
 - Funcionalidade de apoiar eventos com dinheiro da carteira. <br>
