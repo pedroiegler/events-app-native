@@ -17,13 +17,15 @@ const UserProfile = ({ wallet, setWallet }) => {
   const [userEvents, setUserEvents] = useState([]);
   const provider = new GoogleAuthProvider();
 
-  const toggleDropdown = () => setDropdownVisible(!dropdownVisible);
+  useEffect(() => {
+    if (Platform.OS !== 'web') {
+      GoogleSignin.configure({
+        webClientId: '828525740531-05c13bqpkvmc1t6t2gd6f5fnlqodnrd2.apps.googleusercontent.com',
+      });
+    }
+  }, []);
 
-  if (Platform.OS !== 'web') {
-    GoogleSignin.configure({
-      webClientId: '828525740531-05c13bqpkvmc1t6t2gd6f5fnlqodnrd2.apps.googleusercontent.com', 
-    });
-  }
+  const toggleDropdown = () => setDropdownVisible(!dropdownVisible);
 
   const handleLogin = async () => {
     try {
