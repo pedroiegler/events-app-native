@@ -6,8 +6,8 @@ const EventInfo = ({ event }) => {
     <View style={styles.container}>
       <Text style={styles.title}>{event.name}</Text>
       <Text style={styles.detail}><strong>Data e Hora:</strong> {new Date(event.datetime).toLocaleString()}</Text>
-      <Text style={styles.detail}><strong>Meta:</strong> {event.meta} apoios</Text>
-      <Text style={styles.detail}><strong>Apoios atuais:</strong> {event.meta_current} apoios</Text>
+      <Text style={styles.detail}><strong>Meta:</strong> {event.meta} 💵</Text>
+      <Text style={styles.detail}><strong>Apoios atuais:</strong> {event.meta_current} 💵</Text>
     </View>
   );
 };

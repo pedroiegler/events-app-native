@@ -10,7 +10,7 @@ const ProgressSection = ({ event, progress }) => (
       )}
     </View>
     <Text style={styles.progressText}>
-      {progress.toFixed(2)}% ({event.meta_current} de {event.meta} apoios)
+      {progress.toFixed(2)}% ({event.meta_current} de {event.meta} 💵)
     </Text>
   </View>
 );

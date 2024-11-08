@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
   label: {
     marginBottom: 8,
     fontSize: 13,
+    color: '#fff',
   },
   input: {
     borderWidth: 1,

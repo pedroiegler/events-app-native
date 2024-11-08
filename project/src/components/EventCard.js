@@ -19,7 +19,7 @@ const EventCard = ({ event, onClick }) => {
         {progress === 100 && <Text style={styles.metaAchievedText}>META ATINGIDA</Text>}
       </View>
       <Text style={styles.supportText}>
-        {event.meta_current} de {event.meta} apoios
+        {event.meta_current} de {event.meta} 💵
       </Text>
     </TouchableOpacity>
   );
